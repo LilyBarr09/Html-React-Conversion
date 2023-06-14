@@ -1,7 +1,7 @@
 import "./App.css";
-import TopCharactersFunctional from "./Components/TopCharactersFuntional";
-import CharacterCardsClass from "./Components/CharacterCardsClass";
-import { HeaderFunctional } from "./Components/HeaderFuntional";
+import { CharacterCardsClassComp } from "./Components/CharacterCardsClassComp";
+import { HeaderFunctionComp } from "./Components/HeaderFunctionComp";
+import { TopCharactersFunctionComp } from "./Components/TopCharactersFunctionComp";
 
 const data = [
   {
@@ -98,9 +98,9 @@ const data = [
 function App() {
   return (
     <>
-      <HeaderFunctional />
-      <TopCharactersFunctional data={data} />
-      <CharacterCardsClass data={data} />
+      <HeaderFunctionComp />
+      <TopCharactersFunctionComp data={data} />
+      <CharacterCardsClassComp data={data} />
     </>
   );
 }
