@@ -1,4 +1,6 @@
 import "./App.css";
+import TopCharactersFunctional from "./Components/TopCharactersFuntional";
+import CharacterCardsClass from "./Components/CharacterCardsClass";
 
 const data = [
   {
@@ -95,7 +97,8 @@ const data = [
 function App() {
   return (
     <>
-      <div></div>
+      <TopCharactersFunctional data={data} />
+      <CharacterCardsClass data={data} />
     </>
   );
 }
