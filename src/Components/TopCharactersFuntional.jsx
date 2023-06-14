@@ -1,7 +1,3 @@
-export TopCharactersFunctional () {
-	return (
-		<div>
-
-		</div>
-	);
+export function TopCharactersFunctional() {
+  return <div></div>;
 }

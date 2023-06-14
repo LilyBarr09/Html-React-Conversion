@@ -1,6 +1,7 @@
 import "./App.css";
 import TopCharactersFunctional from "./Components/TopCharactersFuntional";
 import CharacterCardsClass from "./Components/CharacterCardsClass";
+import { HeaderFunctional } from "./Components/HeaderFuntional";
 
 const data = [
   {
@@ -68,7 +69,7 @@ const data = [
     nickName: "The Crimson Alchemist",
     votes: -9000,
     skillSet: ["Being a piece of sh*t", "Alchemy"],
-    backGround: "Kimblee suckkkkkssss, seriously he's not very nice",
+    backGround: "Kimblee suuuuuuucksssss, seriously he's not very nice",
     imageUrl:
       "https://static.wikia.nocookie.net/fullmetal-alchemist-database/images/9/94/SolfJKimbleeEp37.png/revision/latest/scale-to-width-down/290?cb=20121003101919",
   },
@@ -97,6 +98,7 @@ const data = [
 function App() {
   return (
     <>
+      <HeaderFunctional />
       <TopCharactersFunctional data={data} />
       <CharacterCardsClass data={data} />
     </>
