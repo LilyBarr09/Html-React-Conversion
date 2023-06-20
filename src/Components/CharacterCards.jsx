@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-export class CharacterCardsClassComp extends Component {
+export class CharacterCards extends Component {
   render() {
     return <div></div>;
   }

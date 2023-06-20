@@ -1,7 +1,7 @@
 import "./App.css";
-import { CharacterCardsClassComp } from "./Components/CharacterCardsClassComp";
-import { HeaderFunctionComp } from "./Components/HeaderFunctionComp";
-import { TopCharactersFunctionComp } from "./Components/TopCharactersFunctionComp";
+import { CharacterCards } from "./Components/CharacterCards";
+import { HeaderNav } from "./Components/HeaderNav";
+import { TopCharactersChart } from "./Components/TopCharactersChart";
 
 const data = [
   {
@@ -98,9 +98,9 @@ const data = [
 function App() {
   return (
     <>
-      <HeaderFunctionComp />
-      <TopCharactersFunctionComp data={data} />
-      <CharacterCardsClassComp data={data} />
+      <HeaderNav />
+      <TopCharactersChart data={data} />
+      <CharacterCards data={data} />
     </>
   );
 }
