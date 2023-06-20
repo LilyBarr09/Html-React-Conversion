@@ -12,7 +12,7 @@ export function TopCharactersChart({ data }) {
             <th>Votes</th>
           </tr>
           {data
-            .filter((item) => item.votes > 90)
+            .filter((item) => item.votes >= 90)
             .map((item, itemIndex) => {
               const adjustedIndex = itemIndex + 1;
               const isOdd = adjustedIndex % 2 === 1;
