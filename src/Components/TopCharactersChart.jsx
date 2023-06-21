@@ -1,7 +1,7 @@
 import "../CSS/CharacterRatings.css";
 
 export function TopCharactersChart({ data }) {
-  const sortedVotes = data
+  const sortedVotes = [...data]
     .sort((v1, v2) => (v1.votes < v2.votes ? 1 : v1.votes > v2.votes ? -1 : 0))
     .slice(0, 5);
   return (
